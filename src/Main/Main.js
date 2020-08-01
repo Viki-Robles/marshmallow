@@ -3,9 +3,9 @@ import DragonsData from '../DragonsData/DragonsData';
 import './Main.css';
 
 export default function Main() {
-    return(
+    return (
         <div className="main-container">
-            <DragonsData/>
+            <DragonsData />
         </div>
-    ) 
+    )
 }

@@ -7,7 +7,6 @@ export default function DragonsData() {
     const [load, setLoad] = useState(false);
     const [rockets, setRockets] = useState([]);
     const [buttonOn, setButtonOn] = useState(false);
-    const [showList, setShowList] = useState(false);
 
     useEffect(() => {
         fetch("https://api.spacexdata.com/v3/dragons")
@@ -26,32 +25,32 @@ export default function DragonsData() {
                 setRockets(rockets);
             }, []);
     };
-   
+
     if (!load) {
         return <div>Loadin Main...</div>;
     } else {
         return (
             <>
-        <h3>Please click the button to ckeck the Rockets</h3>
-        <button onClick={() => fetchRockets(!buttonOn)}>Rockets</button>
-        <div className="rockets-container-items">
-                <div className="rockets-container">
-                    {
-                        rockets.map(({ rocket_name, id, flickr_images, description }) => (
-                            <div key={id}>
-                                <div className="rockets-item">
-                                    <div className="rockets-image"><img src={flickr_images[1]} /></div>
-                                    <div className="rockets-title">{rocket_name}</div>
-                                    <div className="rockets-description">{description}</div>
+                <h3>Please click the button to ckeck the Rockets</h3>
+                <button onClick={() => fetchRockets(!buttonOn)}>Rockets</button>
+                <div className="rockets">
+                    <div className="rockets-container">
+                        {
+                            rockets.map(({ rocket_name, id, flickr_images, description }) => (
+                                <div key={id}>
+                                    <div className="rockets-item">
+                                        <div className="rockets-image"><img src={flickr_images[1]} /></div>
+                                        <div className="rockets-title">{rocket_name}</div>
+                                        <div className="rockets-description">{description}</div>
+                                    </div>
                                 </div>
-                            </div>
-                        ))
-                    }
-                </div>
+                            ))
+                        }
+                    </div>
                 </div>
                 <div className="dragons-container">
                     {
-                        dragons.map(({ id, flickr_images, name,  description }) => (
+                        dragons.map(({ id, flickr_images, name, description }) => (
                             <div key={id}>
                                 <div className="dragons-item">
                                     <div className="dragons-image"><img src={flickr_images[1]} /></div>
@@ -62,8 +61,8 @@ export default function DragonsData() {
                         ))
                     }
                 </div>
-                
-                </>
+
+            </>
         )
     }
 }

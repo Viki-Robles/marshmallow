@@ -1,85 +1,85 @@
 .dragons-image {
-    width: 100%;
+  width: 100%;
 }
 
 img {
-    width: 100%;
-    display: block;
-    border-radius: 4px;
+  width: 100%;
+  display: block;
+  border-radius: 4px;
 }
 
 h3 {
-    color: white;
+  color: white;
 }
-.rockets-container, 
+.rockets-container,
 .dragons-container {
-    display: grid;
-    
+  display: grid;
 }
 
 .dragon-container {
-    margin-top: 40px;
+  margin-top: 40px;
 }
-.dragons-description, 
+.dragons-description,
 .rockets-description {
-line-height: 1.5;
-font-size: 12px;
-color: white;
-justify-content: center;
-align-items: center;
+  line-height: 1.5;
+  font-size: 12px;
+  color: white;
+  justify-content: center;
+  align-items: center;
 }
 
 .dragons-title,
 .rockets-title {
-    color:white;
-    margin-bottom: 20px;
+  color: white;
+  margin-bottom: 20px;
 }
 
-.rockets-item, .dragons-item {
-    margin-bottom: 10px;
-    border-radius: 2px solid black;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    grid-gap: 20px;
-    padding: 2px 16px;
+.rockets-item,
+.dragons-item {
+  margin-bottom: 10px;
+  border-radius: 2px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  grid-gap: 20px;
+  padding: 2px 16px;
 }
 
 button {
-    padding: 25px 30px;
-    border: 1px solid #ff4e75;
-    border-radius: 6px;
-    background-color: #ff4e75;
-    color: white;
-    font-size: 20px;
-    font-weight: 400;
-    border-color: #ff4e75;
-    width: 100%;
-    height: 10%;
-    box-shadow: 0px 0px 9px 0 rgba(250, 246, 246, 0.5), 6px 6px 9px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+  padding: 25px;
+  border: 1px solid #ff4e75;
+  border-radius: 6px;
+  background-color: #ff4e75;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border-color: #ff4e75;
+  width: 100%;
+  box-shadow: 0px 0px 9px 0 rgba(250, 246, 246, 0.5),
+    6px 6px 9px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
 }
 
-@media(min-width:600px){
-    .rockets-container {
+@media (min-width: 600px) {
+  .rockets-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    }
-    .dragons-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px; 
-    }
-    .rockets-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    button {
-        width: 25%;
-    }
+  }
+  .dragons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .rockets-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  button {
+    width: 25%;
+  }
 
-    .main-container {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }

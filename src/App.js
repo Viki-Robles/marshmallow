@@ -5,7 +5,7 @@ import Main from './Main/Main';
 function App() {
   return (
     <div className="App">
-        <header>SpaceShip Mission!</header>
+      <header>SpaceShip Mission</header>
       <Main />
     </div>
   );
