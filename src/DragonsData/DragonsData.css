@@ -9,7 +9,7 @@ img {
 }
 
 h3 {
-    color: #606060;
+    color: white;
 }
 .rockets-container, 
 .dragons-container {
@@ -24,14 +24,15 @@ h3 {
 .rockets-description {
 line-height: 1.5;
 font-size: 12px;
-color: #696969;
+color: white;
 justify-content: center;
 align-items: center;
 }
 
 .dragons-title,
-.rockets.title {
-    color:#282828;
+.rockets-title {
+    color:white;
+    margin-bottom: 20px;
 }
 
 .rockets-item, .dragons-item {
@@ -44,8 +45,7 @@ align-items: center;
 }
 
 button {
-    padding: 15px 30px;
-    padding-bottom: 40px;
+    padding: 25px 30px;
     border: 1px solid #ff4e75;
     border-radius: 6px;
     background-color: #ff4e75;
@@ -73,12 +73,13 @@ button {
     .rockets-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
     }
     button {
-        width: 50%;
-        padding: 25px 20px;
-        padding-bottom: 40px;
+        width: 25%;
+    }
 
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

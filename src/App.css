@@ -1,6 +1,6 @@
 .App {
-    background-color: #F5F5F5;
     overflow: hidden;
+    background-image: url(./images/space.png);
 }
 
 header {
@@ -14,3 +14,4 @@ header {
 *{
     box-sizing: border-box;
 }
+

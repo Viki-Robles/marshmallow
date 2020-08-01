@@ -33,15 +33,15 @@ export default function DragonsData() {
         return (
             <>
         <h3>Please click the button to ckeck the Rockets</h3>
-        <div className="rockets-container">
-          <button onClick={() => fetchRockets(!buttonOn)}>Rockets</button>
+        <button onClick={() => fetchRockets(!buttonOn)}>Rockets</button>
+        <div className="rockets-container-items">
                 <div className="rockets-container">
                     {
-                        rockets.map(({ name, id, flickr_images, type, description }) => (
+                        rockets.map(({ rocket_name, id, flickr_images, description }) => (
                             <div key={id}>
                                 <div className="rockets-item">
                                     <div className="rockets-image"><img src={flickr_images[1]} /></div>
-                                    <div className="rockets-title">{name}</div>
+                                    <div className="rockets-title">{rocket_name}</div>
                                     <div className="rockets-description">{description}</div>
                                 </div>
                             </div>
@@ -51,7 +51,7 @@ export default function DragonsData() {
                 </div>
                 <div className="dragons-container">
                     {
-                        dragons.map(({ name, id, flickr_images, type, description }) => (
+                        dragons.map(({ id, flickr_images, name,  description }) => (
                             <div key={id}>
                                 <div className="dragons-item">
                                     <div className="dragons-image"><img src={flickr_images[1]} /></div>
