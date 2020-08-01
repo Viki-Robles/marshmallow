@@ -30,8 +30,9 @@ h3 {
 
 .dragons-title,
 .rockets-title {
-  color: white;
+  color: #ff4e75;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .rockets-item,
