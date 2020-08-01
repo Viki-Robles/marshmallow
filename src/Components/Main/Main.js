@@ -1,5 +1,5 @@
 import React from 'react';
-import DragonsData from '../DragonsData/DragonsData';
+import DragonsData from '../Components/DragonsData/DragonsData';
 import './Main.css';
 
 export default function Main() {
