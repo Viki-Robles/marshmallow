@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './DragonsData.css';
+import rocket from '../images/rocket.png';
 
 
 export default function DragonsData() {

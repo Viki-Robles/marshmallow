@@ -63,6 +63,7 @@ button {
   box-shadow: 0px 0px 9px 0 rgba(250, 246, 246, 0.5),
     6px 6px 9px 0 rgba(0, 0, 0, 0.2);
   margin-bottom: 20px;
+  cursor: url('../images/rocket (1).png'), auto;
 }
 
 @media (min-width: 600px) {
