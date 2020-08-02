@@ -27,7 +27,7 @@ export default function DragonsData() {
     };
 
     if (!load) {
-        return <div>Loadin Main...</div>;
+        return <div>Loadin your application...</div>;
     } else {
         return (
             <>
