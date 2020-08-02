@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import './DragonsData.css';
-import rocket from '../images/rocket.png';
 
 
 export default function DragonsData() {
@@ -40,7 +39,7 @@ export default function DragonsData() {
                             rockets.map(({ rocket_name, id, flickr_images, description }) => (
                                 <div key={id}>
                                     <div className="rockets-item">
-                                        <div className="rockets-image"><img src={flickr_images[1]} /></div>
+                                        <div className="rockets-image"><img src={flickr_images[1]} alt=""/></div>
                                         <div className="rockets-title">{rocket_name}</div>
                                         <div className="rockets-description">{description}</div>
                                     </div>
@@ -54,7 +53,7 @@ export default function DragonsData() {
                         dragons.map(({ id, flickr_images, name, description }) => (
                             <div key={id}>
                                 <div className="dragons-item">
-                                    <div className="dragons-image"><img src={flickr_images[1]} /></div>
+                                    <div className="dragons-image"><img src={flickr_images[1]} alt=""/></div>
                                     <div className="dragons-title">{name}</div>
                                     <div className="dragons-description">{description}</div>
                                 </div>
