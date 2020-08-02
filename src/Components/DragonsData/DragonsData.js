@@ -15,7 +15,7 @@ export default function DragonsData() {
                 setDragons(dragons);
                 setLoad(true);
             });
-    }, []);
+    });
 
 
     const fetchRockets = () => {
@@ -31,7 +31,7 @@ export default function DragonsData() {
     } else {
         return (
             <>
-                <h3>Please click the button to ckeck the Rockets</h3>
+                <h3>Click the button and ckeck the Rockets</h3>
                 <button onClick={() => fetchRockets(!buttonOn)}>Rockets</button>
                 <div className="rockets">
                     <div className="rockets-container">

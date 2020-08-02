@@ -1,6 +1,6 @@
 .App {
     overflow: hidden;
-    background-image: url(./images/space.png);
+    background-image: url(./Components//images/space.png);
 }
 
 header {
